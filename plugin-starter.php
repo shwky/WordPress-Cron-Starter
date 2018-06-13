@@ -120,7 +120,7 @@ function cron_add_weekly( $schedules ) {
     );
     return $schedules;
 }
-add_filter( 'cron_schedules', 'cron_add_minute' );
+add_filter( 'cron_schedules', 'cron_add_weekly' );
 
 // add another interval
 function cron_add_minute( $schedules ) {
