@@ -82,7 +82,7 @@ function cronstarter_activation() {
 	}
 }
 // and make sure it's called whenever WordPress loads
-add_action('wp', 'cronstarter_activation');
+register_activation_hook (__FILE__, 'cronstarter_activation');
 
 // here's the function we'd like to call with our cron job
 function my_repeat_function() {
